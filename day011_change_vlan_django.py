@@ -1,3 +1,5 @@
+# touch operation_jobs.py 
+
 import os
 
 from django.conf import settings
