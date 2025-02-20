@@ -1,1 +1,23 @@
+# Validate container
+docker ps
+
+
+# Relaunch
+cd nautobot-docker-compose/
+poetry shell
+invoke debug
+
+
+# Build Nautobot from scratch
+cd nautobot-docker-compose/
+poetry shell
+
+invoke build
+
+invoke db-import
+
+invoke debug
+
+
+# Fire up the lab
 
